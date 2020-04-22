@@ -26,39 +26,39 @@ API сервиса должен позволять:
 - wallet/urls.py, wallet/apps/wallet_app/urls.py - URL-структура приложения
 
 #### Примеры URL запросов
-- просмотр кошельков (метод GET):
-    http://127.0.0.1:8000/wallet_app/wallets/5/
-    http://127.0.0.1:8000/wallet_app/wallets/
+- просмотр кошельков (метод GET):<br/>
+    http://127.0.0.1:8000/wallet_app/wallets/5/ <br/>
+    http://127.0.0.1:8000/wallet_app/wallets/ <br/>
 
-- просмотр транзакций (метод GET):
-    http://127.0.0.1:8000/wallet_app/txs/
-    http://127.0.0.1:8000/wallet_app/wallets/3/txs/
-    http://127.0.0.1:8000/wallet_app/wallets/3/txs/3/
-    http://127.0.0.1:8000/wallet_app/txs/3/
+- просмотр транзакций (метод GET): <br/>
+    http://127.0.0.1:8000/wallet_app/txs/ <br/>
+    http://127.0.0.1:8000/wallet_app/wallets/3/txs/ <br/>
+    http://127.0.0.1:8000/wallet_app/wallets/3/txs/3/ <br/>
+    http://127.0.0.1:8000/wallet_app/txs/3/ <br/>
 
-- создание кошелька (метод POST):
-    http://127.0.0.1:8000/wallet_app/wallets/create/
-    Body: {"name": "wal5"}
+- создание кошелька (метод POST): <br/>
+    http://127.0.0.1:8000/wallet_app/wallets/create/ <br/>
+    body: {"name": "wal5"} <br/>
 
-- редактирование кошелька (метод PUT):
-    http://127.0.0.1:8000/wallet_app/wallets/1/update/
-    Body: {"name": "my_wal2134297"}
+- редактирование кошелька (метод PUT): <br/>
+    http://127.0.0.1:8000/wallet_app/wallets/1/update/ <br/>
+    body: {"name": "my_wal2134297"} <br/>
 
-- создание транзакции (метод POST):
-    http://127.0.0.1:8000/wallet_app/txs/create/
-    Body: {"wallet_id": 2, "tx_comment": "ergergweg", "tx_date": "2020-04-20 07:26:33", "tx_sum": 800}
-    http://127.0.0.1:8000/wallet_app/wallets/3/txs/create/
-    Body: {"tx_comment": "ergergweg", "tx_date": "2020-04-20 07:26:33", "tx_sum": 800}
+- создание транзакции (метод POST): <br/>
+    http://127.0.0.1:8000/wallet_app/txs/create/ <br/>
+    body: {"wallet_id": 2, "tx_comment": "ergergweg", "tx_date": "2020-04-20 07:26:33", "tx_sum": 800} <br/>
+    http://127.0.0.1:8000/wallet_app/wallets/3/txs/create/ <br/>
+    body: {"tx_comment": "ergergweg", "tx_date": "2020-04-20 07:26:33", "tx_sum": 800} <br/>
 
-- редактирование транзакции (метод PUT):
-    http://127.0.0.1:8000/wallet_app/txs/2/update/
-    http://127.0.0.1:8000/wallet_app/wallets/3/txs/2/udpate/
-    Body: {"wallet_id": 2, "tx_comment": "ergergweg", "tx_date": "2020-04-20 07:26:33", "tx_sum": 800}
+- редактирование транзакции (метод PUT): <br/>
+    http://127.0.0.1:8000/wallet_app/txs/2/update/ <br/>
+    http://127.0.0.1:8000/wallet_app/wallets/3/txs/2/udpate/ <br/>
+    body: {"wallet_id": 2, "tx_comment": "ergergweg", "tx_date": "2020-04-20 07:26:33", "tx_sum": 800} <br/>
 
-- удаление кошельков или транзакций (метод DELETE):
-    http://127.0.0.1:8000/wallet_app/txs/3/delete/
-    http://127.0.0.1:8000/wallet_app/wallets/2/delete/
-    http://127.0.0.1:8000/wallet_app/wallets/2/txs/3/delete/
+- удаление кошельков или транзакций (метод DELETE): <br/>
+    http://127.0.0.1:8000/wallet_app/txs/3/delete/ <br/>
+    http://127.0.0.1:8000/wallet_app/wallets/2/delete/ <br/>
+    http://127.0.0.1:8000/wallet_app/wallets/2/txs/3/delete/ <br/>
 
 ### Установка приложения 
 git clone git@github.com:Arkkav/wallet.git<br/>
