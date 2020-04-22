@@ -46,7 +46,8 @@ def txs(request, wallet=None, tx=None):
         try:
             trancs = list(Transaction.objects.filter(wallet_id=int(wallet)).values())
         except ValueError:
-            return HttpResponseForbidden("ID does not match format.")
+            return HttpResponseForbidden("ID does n"
+                                         "ot match format.")
     else:
         trancs = list(Transaction.objects.values())
 
